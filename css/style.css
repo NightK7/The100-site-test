@@ -5,7 +5,7 @@ html{
 body{
     margin: 0px;
 }
-h2,h3,h4, footer{
+h2,h3, footer{
     text-align: center;
 }
 /* ******************************HEADER*********************** */
@@ -119,22 +119,14 @@ main {
     display: flex;
     flex-direction: row;
 }
-/* .image {
-    float: left;
-    width: 33.33%;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-} */
 .side {
-    -ms-flex: 30%; /* IE10 */
+    -ms-flex: 30%;
     flex: 30%;
-    background-color: #f1f1f1;
+    background-color: #aaa;
     padding: 20px;
 }
 .main {   
-    -ms-flex: 70%; /* IE10 */
+    -ms-flex: 70%;
     flex: 70%;
     background-color: white;
     padding: 20px;
@@ -142,6 +134,18 @@ main {
 .fakeimg {
     background-color: #aaa;
     padding: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+.fakeimg:hover{
+    cursor: pointer;
+}
+/* ******************************DIV LIEUX*********************** */
+#camp100 > table > tbody > tr > td > img{
+    cursor: pointer;
+}
+.closebtn {
+    cursor: pointer;
 }
 /* ******************************FOOTER*********************** */
 footer{
