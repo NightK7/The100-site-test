@@ -26,33 +26,87 @@
         <div class="col">
             <div class="side">
                 <h2>Lieux</h2>
-                <h5>Photo of me:</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                <h3>More Text</h3>
-                <p>Lorem ipsum dolor sit ame.</p>
-                <div class="fakeimg" style="height:60px;">Image</div><br>
-                <div class="fakeimg" style="height:60px;">Image</div><br>
-                <div class="fakeimg" style="height:60px;">Image</div>
+                <div class="fakeimg" style="height:60px; background: url(/img/camp100.jpg) no-repeat center/ 100%"
+                    onclick="myLocation()">
+                    Camp des délinquants</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/arkadia.png) no-repeat top/ 100%">
+                    Arkadia</div><br>
+                <div class="fakeimg"
+                    style="height:60px; background: url(/img/mount_weather.png) no-repeat center/ 100%">
+                    Mont Weather
+                </div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/tondc.png) no-repeat center/ 100%">
+                    Tondc
+                </div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/dead_zone.png) no-repeat bottom/ 100%">
+                    Zone morte</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/becca_island.png) no-repeat center/ 100%">
+                    L'île de Becca</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/polis.png) no-repeat center/ 100%">
+                    Polis
+                </div><br>
+                <div class="fakeimg"
+                    style="height:60px; background: url(/img/shallow_village.png) no-repeat center/ 100%">
+                    Shallow Valley
+                </div><br>
+            </div>
+            <div class="side">
+                <h2>The 100</h2>
+                <div class="fakeimg" style="height:60px; background: url(/img/polaris.png) no-repeat center/ 100%">
+                    Polaris</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/ark.jpg) no-repeat center/ 100%">
+                    L'arche
+                </div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/eligius4.png) no-repeat center/ 100%">
+                    Eligius IV</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/sanctum.png) no-repeat center/ 100%">
+                    Sanctum</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/nakara.jpg) no-repeat center/ 100%">
+                    Nakara
+                </div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/etherea.jpg) no-repeat center/ 100%">
+                    Etherea</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/skyring.png) no-repeat center/ 100%">
+                    Skyring</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/bardo.png) no-repeat center/ 100%">
+                    Bardo
+                </div><br>
             </div>
 
+
+
             <div class="main">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg" style="height:200px; padding-right: 0px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
-                <br>
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div class="fakeimg" style="height:200px; padding-right: 0px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
+                <h2>Description du lieu :</h2>
+
+                <div id="camp100" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Le camp des délinquants (également appelé le Dropship ou le Camp) est une palissade construite
+                    autour du Dropship qui a amené les 100 sur Terre. C'est un emplacement majeur dans la première
+                    saison et un emplacement mineur dans les deuxième et troisième saisons. Le camp a été brûlé à la
+                    suite de l'attaque de Trikru contre lui. Le vaisseau et les murs restent en place, mais la plupart
+                    du reste du camp a brûlé ou a été récupéré et est actuellement inhabité.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/camp1.png" alt="camp1" style="width: 100%;"
+                                    onclick="myImageLocation(this);"></td>
+                            <td><img src="/img/camp2.png" alt="camp2" style="width: 100%;"
+                                    onclick="myImageLocation(this);"></td>
+                            <td><img src="/img/camp3.jpg" alt="camp3" style="width: 100%;"
+                                    onclick="myImageLocation(this);"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div class="container">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="expandedImg" style="width:100%;">
+                    </div>
+                </div>
+
             </div>
+
+
         </div>
     </main>
     <div id="footer"></div>
