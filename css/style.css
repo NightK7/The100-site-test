@@ -140,8 +140,8 @@ main {
 .fakeimg:hover{
     cursor: pointer;
 }
-/* ******************************DIV LIEUX*********************** */
-#camp100 > table > tbody > tr > td > img{
+/* ******************************LIEUX*********************** */
+table > tbody > tr > td > img{
     cursor: pointer;
 }
 .closebtn {
