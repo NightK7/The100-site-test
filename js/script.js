@@ -1,6 +1,7 @@
 //JS POUR LA PARITES LIEUX
-function myLocation() {
-    var x = document.getElementById("camp100");
+
+function myLocation(id) {
+    var x = document.getElementById(id);
     if (x.style.display === "none") {
         x.style.display = "block";
     }
