@@ -5,6 +5,7 @@
     <title>Lieux</title>
     <meta name="author" content="Night_K7">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/style.css">
@@ -24,60 +25,67 @@
     <div id="navbar"></div>
     <main>
         <div class="col">
+            <!-- 1ER COLONNE DE LIEUX -->
             <div class="side">
                 <h2>Lieux</h2>
                 <div class="fakeimg" style="height:60px; background: url(/img/camp100.jpg) no-repeat center/ 100%"
-                    onclick="myLocation()">
+                    onclick="myLocation('camp100')">
                     Camp des délinquants</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/arkadia.png) no-repeat top/ 100%">
+                <div class="fakeimg" style="height:60px; background: url(/img/arkadia.png) no-repeat top/ 100%"
+                    onclick="myLocation('arkadia')">
                     Arkadia</div><br>
-                <div class="fakeimg"
-                    style="height:60px; background: url(/img/mount_weather.png) no-repeat center/ 100%">
-                    Mont Weather
-                </div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/tondc.png) no-repeat center/ 100%">
-                    Tondc
-                </div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/dead_zone.png) no-repeat bottom/ 100%">
+                <div class="fakeimg" style="height:60px; background: url(/img/mount_weather.png) no-repeat center/ 100%"
+                    onclick="myLocation('weather')">
+                    Mont Weather</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/tondc.png) no-repeat center/ 100%"
+                    onclick="myLocation('tondc')">
+                    Tondc</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/dead_zone.png) no-repeat bottom/ 100%"
+                    onclick="myLocation('deadzone')">
                     Zone morte</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/becca_island.png) no-repeat center/ 100%">
+                <div class="fakeimg" style="height:60px; background: url(/img/becca_island.png) no-repeat center/ 100%"
+                    onclick="myLocation('becca')">
                     L'île de Becca</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/polis.png) no-repeat center/ 100%">
-                    Polis
-                </div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/polis.png) no-repeat center/ 100%"
+                    onclick="myLocation('polis')">
+                    Polis</div><br>
                 <div class="fakeimg"
-                    style="height:60px; background: url(/img/shallow_village.png) no-repeat center/ 100%">
-                    Shallow Valley
-                </div><br>
+                    style="height:60px; background: url(/img/shallow_village.png) no-repeat center/ 100%"
+                    onclick="myLocation('shallow')">
+                    Shallow Valley</div><br>
             </div>
+            <!-- 2EME COLONNE DE LIEUX -->
             <div class="side">
                 <h2>The 100</h2>
-                <div class="fakeimg" style="height:60px; background: url(/img/polaris.png) no-repeat center/ 100%">
+                <div class="fakeimg" style="height:60px; background: url(/img/polaris.png) no-repeat center/ 100%"
+                    onclick="myLocation('polaris')">
                     Polaris</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/ark.jpg) no-repeat center/ 100%">
-                    L'arche
-                </div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/eligius4.png) no-repeat center/ 100%">
+                <div class="fakeimg" style="height:60px; background: url(/img/ark.jpg) no-repeat center/ 100%"
+                    onclick="myLocation('ark')">
+                    L'arche</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/eligius4.png) no-repeat center/ 100%"
+                    onclick="myLocation('eligius')">
                     Eligius IV</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/sanctum.png) no-repeat center/ 100%">
+                <div class="fakeimg" style="height:60px; background: url(/img/sanctum.png) no-repeat center/ 100%"
+                    onclick="myLocation('sanctum')">
                     Sanctum</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/nakara.jpg) no-repeat center/ 100%">
-                    Nakara
-                </div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/etherea.jpg) no-repeat center/ 100%">
+                <div class="fakeimg" style="height:60px; background: url(/img/nakara.jpg) no-repeat center/ 100%"
+                    onclick="myLocation('nakara')">
+                    Nakara</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/etherea.jpg) no-repeat center/ 100%"
+                    onclick="myLocation('etherea')">
                     Etherea</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/skyring.png) no-repeat center/ 100%">
+                <div class="fakeimg" style="height:60px; background: url(/img/skyring.png) no-repeat center/ 100%"
+                    onclick="myLocation('skyring')">
                     Skyring</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/bardo.png) no-repeat center/ 100%">
-                    Bardo
-                </div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/bardo.png) no-repeat center/ 100%"
+                    onclick="myLocation('bardo')">
+                    Bardo</div><br>
             </div>
-
-
 
             <div class="main">
                 <h2>Description du lieu :</h2>
-
+                <!-- DIV CAMP100 -->
                 <div id="camp100" style="display: none;">
                     <h4>Tout au long de la série</h4>
                     Le camp des délinquants (également appelé le Dropship ou le Camp) est une palissade construite
@@ -103,10 +111,132 @@
                         <img id="expandedImg" style="width:100%;">
                     </div>
                 </div>
+                <!-- DIV ARKADIA -->
+                <div id="arkadia" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Arkadia, anciennement connue sous le nom de Camp Jaha, était le port d'attache des Skykru. Le
+                    camp est construit autour de la station Alpha qui s'est écrasée après sa descente sur Terre avec les
+                    autres stations de l'Arche. Arkadia est considéré comme la maison de tout les Skykru, qu'ils soient
+                    venus sur Terre avec la station Alpha, Mecha, Factory, Farm, ou le dropship des
+                    délinquants. Arkadia a été détruite par Praimfaya.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/arkadia1.png" alt="arkadia1" style="width: 100%;"></td>
+                            <td><img src="/img/arkadia2.png" alt="arkadia2" style="width: 100%;"></td>
+                            <td><img src="/img/arkadia3.png" alt="arkadia3" style="width: 100%;"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div class="container">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="expandedImg" style="width:100%;">
+                    </div>
+                </div>
+                <!-- DIV MOUNT WEATHER -->
+                <div id="weather" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Le centre des opérations d'urgence du mont Weather, également connu sous le nom de Mont Weather, est
+                    un endroit présenté dans la deuxième, troisième et sixième saison. Le Mont Weather est un bunker
+                    souterrain militaire américain et une installation de lancement de silo de missiles située dans les
+                    Blue Ridge Mountains, dans l'est des États-Unis d'Amérique sur Terre. Il a été construit pour loger
+                    de hauts responsables américains en cas de guerre nucléaire.
+                    Les hommes de la montagne sont les descendants des personnes d'origine qui s'y
+                    sont réfugiées pendant l'Apocalypse nucléaire. Au cours de la première saison, c'était le point de
+                    chute prévu pour les 100, mais ils n'ont pas pu s'y rendre car le territoire appartenait au Trikru.
+                    Le Mont Weather est actuellement inactif en raison d'une séquence d'autodestruction initiée par
+                    Carl Emerson et la nation des glaces. Il a été définitivement détruit.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/weather1.jpg" alt="weather1" style="width: 100%;"></td>
+                            <td><img src="/img/weather2.jpg" alt="weather2" style="width: 100%;"></td>
+                            <td><img src="/img/weather3.jpg" alt="weather3" style="width: 100%;"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div class="container">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="expandedImg" style="width:100%;">
+                    </div>
+                </div>
+                <!-- DIV TONDC -->
+                <div id="tondc" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Tondc ou Tondisi (Trigedasleng), anciennement Washington D.C., est un endroit sur Terre présenté
+                    dans la deuxième saison. Tondc tire son nom de "Washington DC" et est un lieu politique clé par
+                    les Trikru. Suite au missile lancé par Mount Weather, Tondc est resté en ruines. Le village s'est
+                    rétabli et Clarke à estimé sa population à 300 dans "Heavy Lies the Crown". À partir de "Praimfaya",
+                    il est supposé que Tondc est complètement parti ou en ruine car la Terre s'avère inhabitable.
+                    Cependant, la Terre est redevenue habitable par la suite...
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/tondc1.png" alt="tondc1" style="width: 100%;"></td>
+                            <td><img src="/img/tondc2.png" alt="tondc2" style="width: 100%;"></td>
+                            <td><img src="/img/tondc3.png" alt="tondc3" style="width: 100%;"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div class="container">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="expandedImg" style="width:100%;">
+                    </div>
+                </div>
+                <!-- DIV DEAD ZONE -->
+                <div id="deadzone" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    La zone morte est un endroit présenté dans The 100. On ne sait pas quel endroit il était avant
+                    l'apocalypse nucléaire, seulement qu'il n'est pas loin de ce qui était autrefois connu sous le nom
+                    de Washington DC. Il est probable que ce soit dans ce qui était New York, car la Statue de la
+                    Liberté est vue à moitié enterrée dans le sable pendant les premiers titres et le Manhattan Bridge
+                    peut être vu à l'arrière-plan derrière le missile de Jaha après son atterrissage sur Terre.
+                    C'est aussi l'endroit ou l'on recontre pour la prmière fois Emori.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/deadzone1.png" alt="deadzone1" style="width: 100%;"></td>
+                            <td><img src="/img/deadzone2.png" alt="deadzone2" style="width: 100%;"></td>
+                            <td><img src="/img/deadzone3.png" alt="deadzone3" style="width: 100%;"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div class="container">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="expandedImg" style="width:100%;">
+                    </div>
+                </div>
+                <!-- BECCA -->
+                <div id="becca" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    L'île de Becca, également connue sous le nom d'île A.L.I.E., est située au large de la côte nord-est
+                    de ce qui était les États-Unis. C'est à l'est du New Jersey et au sud de Long Island (New York). Il
+                    est également à 210 km de Polis. Avant l'apocalypse nucléaire, cette île était utilisée par Becca et
+                    son équipe pour le projet A.L.I.E. Ensuite, il a été utilisé par A.L.I.E et ses partisans. Après
+                    qu'A.L.I.E. à été détruite, une équipe des Skykru dirigée par Abigail Griffin utilise l'île pour
+                    des recherches sur les Nightblood. Sur l'île, se trouve également un phare et un manoir.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/becca1.png" alt="becca1" style="width: 100%;"></td>
+                            <td><img src="/img/becca2.png" alt="becca2" style="width: 100%;"></td>
+                            <td><img src="/img/becca3.png" alt="becca3" style="width: 100%;"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div class="container">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="expandedImg" style="width:100%;">
+                    </div>
+                </div>
+
 
             </div>
-
-
         </div>
     </main>
     <div id="footer"></div>
