@@ -15,3 +15,8 @@ function myImageLocation(imgs) {
     expandImg.src = imgs.src;
     expandImg.parentElement.style.display = "block";
 }
+
+//FORMULAIRE DE CONTACT
+function send() {
+    document.getElementById('form').action = "mailto:kevinlaveau7@gmail.com?subject=" + document.getElementById('raison').value;
+}
