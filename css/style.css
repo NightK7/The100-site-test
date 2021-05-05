@@ -1,6 +1,9 @@
 /********************************GENERAL*********************** */
 html{
     scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 body{
     margin: 0px;
@@ -132,13 +135,52 @@ main {
     padding: 20px;
 }
 .fakeimg {
-    background-color: #aaa;
+    background-color: red;
     padding: 20px;
     color: white;
+    border-radius: 5px;
     text-transform: uppercase;
+    border-color: black;
 }
 .fakeimg:hover{
     cursor: pointer;
+}
+table > tbody > tr > td > img, #expandedImg {
+    border-radius: 5px;
+}
+/* ******************************HOME*********************** */
+body > main > div > div.main > table > tbody > tr > td:nth-child(2) > img {
+    cursor: context-menu;
+}
+body > main > div > div.main > a > img {
+    height: 125px;
+    cursor: pointer;
+    text-align:center;
+    margin : auto;
+    display:flex;
+}
+#tableDate {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+  
+#tableDate td, #tableDate th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#tableDate tr:nth-child(even){background-color: #f2f2f2;}
+  
+#tableDate tr:hover {background-color: #ddd;}
+  
+#tableDate th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(15, 100, 197);
+    color: white;
+    text-align: center;
 }
 /* ******************************LIEUX*********************** */
 table > tbody > tr > td > img{
@@ -146,6 +188,50 @@ table > tbody > tr > td > img{
 }
 .closebtn {
     cursor: pointer;
+}
+
+/* ******************************CONTACT*********************** */
+main {
+    background: url(/img/contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 5px;
+  }
+  
+input[type=submit] {
+    background-color: rgb(15, 100, 197);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+  
+input[type=submit]:hover {
+    background-color: rgb(0, 253, 0);
+}
+  
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 /* ******************************FOOTER*********************** */
 footer{
