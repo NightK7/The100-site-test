@@ -5,7 +5,7 @@
     <title>Lieux</title>
     <meta name="author" content="Night_K7">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
     <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/style.css">
@@ -85,7 +85,7 @@
 
             <div class="main">
                 <h2>Description du lieu :</h2>
-                <!-- DIV CAMP100 -->
+                <!-- CAMP100 -->
                 <div id="camp100" style="display: none;">
                     <h4>Tout au long de la série</h4>
                     Le camp des délinquants (également appelé le Dropship ou le Camp) est une palissade construite
@@ -98,20 +98,20 @@
                     <table>
                         <tr>
                             <td><img src="/img/camp1.png" alt="camp1" style="width: 100%;"
-                                    onclick="myImageLocation(this);"></td>
+                                    onclick="imageZoom(this, 'img01', 'modal01');"></td>
                             <td><img src="/img/camp2.png" alt="camp2" style="width: 100%;"
-                                    onclick="myImageLocation(this);"></td>
+                                    onclick="imageZoom(this, 'img01', 'modal01');"></td>
                             <td><img src="/img/camp3.jpg" alt="camp3" style="width: 100%;"
-                                    onclick="myImageLocation(this);"></td>
+                                    onclick="imageZoom(this, 'img01', 'modal01');"></td>
                         </tr>
                     </table>
                     <h4>Clique sur la photo pour l'agrandir</h4>
-                    <div class="container2">
+                    <div id="modal01" onclick="this.style.display='none'">
                         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                        <img id="expandedImg" style="width:100%;">
+                        <img id="img01" style="width:100%">
                     </div>
                 </div>
-                <!-- DIV ARKADIA -->
+                <!-- ARKADIA -->
                 <div id="arkadia" style="display: none;">
                     <h4>Tout au long de la série</h4>
                     Arkadia, anciennement connue sous le nom de Camp Jaha, était le port d'attache des Skykru. Le
@@ -123,18 +123,21 @@
                     <h4>Quelques photos</h4>
                     <table>
                         <tr>
-                            <td><img src="/img/arkadia1.png" alt="arkadia1" style="width: 100%;"></td>
-                            <td><img src="/img/arkadia2.png" alt="arkadia2" style="width: 100%;"></td>
-                            <td><img src="/img/arkadia3.png" alt="arkadia3" style="width: 100%;"></td>
+                            <td><img src="/img/arkadia1.png" alt="arkadia1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img02', 'modal02');"></td>
+                            <td><img src="/img/arkadia2.png" alt="arkadia2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img02', 'modal02');"></td>
+                            <td><img src="/img/arkadia3.png" alt="arkadia3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img02', 'modal02');"></td>
                         </tr>
                     </table>
                     <h4>Clique sur la photo pour l'agrandir</h4>
-                    <div class="container2">
+                    <div id="modal02" onclick="this.style.display='none'">
                         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                        <img id="expandedImg" style="width:100%;">
+                        <img id="img02" style="width:100%">
                     </div>
                 </div>
-                <!-- DIV MOUNT WEATHER -->
+                <!-- MOUNT WEATHER -->
                 <div id="weather" style="display: none;">
                     <h4>Tout au long de la série</h4>
                     Le centre des opérations d'urgence du mont Weather, également connu sous le nom de Mont Weather, est
@@ -151,18 +154,21 @@
                     <h4>Quelques photos</h4>
                     <table>
                         <tr>
-                            <td><img src="/img/weather1.jpg" alt="weather1" style="width: 100%;"></td>
-                            <td><img src="/img/weather2.jpg" alt="weather2" style="width: 100%;"></td>
-                            <td><img src="/img/weather3.jpg" alt="weather3" style="width: 100%;"></td>
+                            <td><img src="/img/weather1.jpg" alt="weather1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img03', 'modal03');"></td>
+                            <td><img src="/img/weather2.jpg" alt="weather2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img03', 'modal03');"></td>
+                            <td><img src="/img/weather3.jpg" alt="weather3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img03', 'modal03');"></td>
                         </tr>
                     </table>
                     <h4>Clique sur la photo pour l'agrandir</h4>
-                    <div class="container2">
+                    <div id="modal03" onclick="this.style.display='none'">
                         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                        <img id="expandedImg" style="width:100%;">
+                        <img id="img03" style="width:100%">
                     </div>
                 </div>
-                <!-- DIV TONDC -->
+                <!-- TONDC -->
                 <div id="tondc" style="display: none;">
                     <h4>Tout au long de la série</h4>
                     Tondc ou Tondisi (Trigedasleng), anciennement Washington D.C., est un endroit sur Terre présenté
@@ -175,18 +181,21 @@
                     <h4>Quelques photos</h4>
                     <table>
                         <tr>
-                            <td><img src="/img/tondc1.png" alt="tondc1" style="width: 100%;"></td>
-                            <td><img src="/img/tondc2.png" alt="tondc2" style="width: 100%;"></td>
-                            <td><img src="/img/tondc3.png" alt="tondc3" style="width: 100%;"></td>
+                            <td><img src="/img/tondc1.png" alt="tondc1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img04', 'modal04');"></td>
+                            <td><img src="/img/tondc2.png" alt="tondc2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img04', 'modal04');"></td>
+                            <td><img src="/img/tondc3.png" alt="tondc3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img04', 'modal04');"></td>
                         </tr>
                     </table>
                     <h4>Clique sur la photo pour l'agrandir</h4>
-                    <div class="container2">
+                    <div id="modal04" onclick="this.style.display='none'">
                         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                        <img id="expandedImg" style="width:100%;">
+                        <img id="img04" style="width:100%">
                     </div>
                 </div>
-                <!-- DIV DEAD ZONE -->
+                <!-- DEAD ZONE -->
                 <div id="deadzone" style="display: none;">
                     <h4>Tout au long de la série</h4>
                     La zone morte est un endroit présenté dans The 100. On ne sait pas quel endroit il était avant
@@ -199,15 +208,18 @@
                     <h4>Quelques photos</h4>
                     <table>
                         <tr>
-                            <td><img src="/img/deadzone1.png" alt="deadzone1" style="width: 100%;"></td>
-                            <td><img src="/img/deadzone2.png" alt="deadzone2" style="width: 100%;"></td>
-                            <td><img src="/img/deadzone3.png" alt="deadzone3" style="width: 100%;"></td>
+                            <td><img src="/img/deadzone1.png" alt="deadzone1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img05', 'modal05');"></td>
+                            <td><img src="/img/deadzone2.png" alt="deadzone2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img05', 'modal05');"></td>
+                            <td><img src="/img/deadzone3.png" alt="deadzone3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img05', 'modal05');"></td>
                         </tr>
                     </table>
                     <h4>Clique sur la photo pour l'agrandir</h4>
-                    <div class="container2">
+                    <div id="modal05" onclick="this.style.display='none'">
                         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                        <img id="expandedImg" style="width:100%;">
+                        <img id="img05" style="width:100%">
                     </div>
                 </div>
                 <!-- BECCA -->
@@ -223,19 +235,339 @@
                     <h4>Quelques photos</h4>
                     <table>
                         <tr>
-                            <td><img src="/img/becca1.png" alt="becca1" style="width: 100%;"></td>
-                            <td><img src="/img/becca2.png" alt="becca2" style="width: 100%;"></td>
-                            <td><img src="/img/becca3.png" alt="becca3" style="width: 100%;"></td>
+                            <td><img src="/img/becca1.png" alt="becca1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img06', 'modal06');"></td>
+                            <td><img src="/img/becca2.png" alt="becca2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img06', 'modal06');"></td>
+                            <td><img src="/img/becca3.png" alt="becca3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img06', 'modal06');"></td>
                         </tr>
                     </table>
                     <h4>Clique sur la photo pour l'agrandir</h4>
-                    <div class="container2">
+                    <div id="modal06" onclick="this.style.display='none'">
                         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-                        <img id="expandedImg" style="width:100%;">
+                        <img id="img06" style="width:100%">
+                    </div>
+                </div>
+                <!-- POLIS -->
+                <div id="polis" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Polis, anciennement Baltimore, était la capitale de la Coalition et l'endroit où résidait le
+                    commandant. <br>
+                    En février 2150, Polis, avec Arkadia et la plateforme Floukru, était sous l'occupation d'A.L.I.E. et
+                    ses partisans. Le trône du commandant (au plus haut niveau de la tour
+                    principale de Polis étant le siège du pouvoir et la base des opérations de l'A.L.I.E. pendant le
+                    court conflit. <br>
+                    Cependant, A.L.I.E. a été vaincu dans le final de la saison 3. <br>
+                    À partir de la saison quatre, Polis est devenue une zone de guerre. À la fin de la saison quatre,
+                    Polis a été détruit par le deuxième Praimfaya. <br>
+                    Plus de cent ans après l'événement de "Damoclès", le groupe de Clarke retourne sur une Terre
+                    régénérée, où il n'y a presque aucun signe des ruines de Polis, la zone ayant été reprise par une
+                    forêt à la place. Les seuls vestiges semblent être quelques roches tombées au-dessus de l'entrée du
+                    bunker et de la base envahie de la tour Polis.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/polis1.jpg" alt="polis1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img07', 'modal07');"></td>
+                            <td><img src="/img/polis2.jpg" alt="polis2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img07', 'modal07');"></td>
+                            <td><img src="/img/polis3.jpg" alt="polis3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img07', 'modal07');"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div id="modal07" onclick="this.style.display='none'">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="img07" style="width:100%">
+                    </div>
+                </div>
+                <!-- SHALLOW VALLEY -->
+                <div id="shallow" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Shallow Valley (aussi connu sous le nom d'Eden ou the Valley) est située dans ce qui était autrefois
+                    le nord-ouest de la Virginie sur Terre.
+                    Avant la deuxième apocalypse nucléaire, il était habité par le clan de la Shallow Valley (Louwoda
+                    Kliron). <br>
+                    La vallée était un emplacement majeur dans la saison cinq; servant de la seule "tache verte" sur la
+                    planète. Cela était dû en partie à la "Praimfaya" qui est passé au-dessus de la vallée. <br>
+                    C'est aussi le village d'origine de Madi.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/shallow1.png" alt="shallow1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img08', 'modal08');"></td>
+                            <td><img src="/img/shallow2.png" alt="shallow2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img08', 'modal08');"></td>
+                            <td><img src="/img/shallow3.png" alt="shallow3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img08', 'modal08');"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div id="modal08" onclick="this.style.display='none'">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="img08" style="width:100%">
                     </div>
                 </div>
 
+                <!-- //////////////DEUXIEME COLONE//////////////// -->
 
+                <!-- POLARIS -->
+                <div id="polaris" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Polaris, également connue sous le nom de 13e Station (anciennement connue sous le nom de Station
+                    Polaris), était une station spatiale appartenant à la société de Becca. Il a été utilisé par Becca
+                    pour mener des recherches sur A.L.I.E. 2.0 pendant deux ans après l'apocalypse nucléaire. Il a été
+                    détruit par Alpha Station le jour de l'Unité afin que les autres stations se mettent en ligne et
+                    rejoignent l'Arche.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/polaris1.png" alt="polaris1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img09', 'modal09');"></td>
+                            <td><img src="/img/polaris2.jpg" alt="polaris2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img09', 'modal09');"></td>
+                            <td><img src="/img/polaris3.jpg" alt="polaris3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img09', 'modal09');"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div id="modal09" onclick="this.style.display='none'">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="img09" style="width:100%">
+                    </div>
+                </div>
+                <!-- ARK -->
+                <div id="ark" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    L'Arche était une station spatiale en orbite qui servait de domicile aux Skykru. Les Skykru sont les
+                    descendants de ceux qui ont échappé à l'Apocalypse nucléaire sur Terre 97 ans avant les événements
+                    de la série. Avec le Camp des délinquants, The Ark a servi de lieu principal lors des événements de
+                    la première saison de la series. <br>
+                    Suite aux événements du final de la saison 1, l'Arche a été divisée en ses
+                    stations originelle; ne laissant que la partie gouvernement et science (Go-Sci) en orbite. <br>
+                    À la fin de la deuxième saison, une composante nucléaire de la station spatiale de haute technologie
+                    est en possession de l'Intelligence Artificielle A.L.I.E. <br>
+                    Alors que l'anneau Go-Sci restait en orbite, il est utilisé par A.L.I.E. dans la saison trois et
+                    le Spacekru dans la saison quatre. Spacekru, composé de cinq Skykru et de deux Grounders, a vécu à
+                    bord de l'Anneau pendant les 6 années qu'il a fallu pour que les niveaux de rayonnement chutent
+                    après la deuxième apocalypse nucléaire. Ils sont restés à bord jusqu'à l'épisode de la saison cinq,
+                    «Sleeping Giants», lorsqu'ils ont abandonné l'anneau. <br>
+                    La station entière était gouvernée par un chancelier et son conseil. Le chancelier était élu par le
+                    peuple et le conseil. Sous le Conseil et le Chancelier se trouvaient les gardes de
+                    l'Arche qui étaient la principale force de sécurité et d'application de la loi sur les 12 stations.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/ark1.png" alt="ark1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img10', 'modal10');"></td>
+                            <td><img src="/img/ark2.jpg" alt="ark2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img10', 'modal10');"></td>
+                            <td><img src="/img/ark3.png" alt="ark3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img10', 'modal10');"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div id="modal10" onclick="this.style.display='none'">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="img10" style="width:100%">
+                    </div>
+                </div>
+                <!-- ELIGIUS -->
+                <div id="eligius" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Eligius IV est un vaisseau minier et une station spatiale précédemment construits et possédés par
+                    Eligius Corporation avant la première apocalypse nucléaire. Il a été conçu pour être utilisé pour
+                    des missions interstellaires pour extraire des astéroïdes et a ensuite été utilisé pour rechercher
+                    des planètes habitables. Le vaisseau a été construit pour accueillir 500 personnes dans un
+                    cryo-sommeil indéfinie. <br>
+                    En plus de l'équipement minier, de la nourriture pour plusieurs semaines, un
+                    petit recycleur d'eau, un navire de transport et un assortiment d'armes et de matériel de qualité
+                    militaire pour les gardes. Y compris les armes à feu, les missiles et les colliers anti-chocs pour
+                    les détenus. Il dispose également d'une baie médicale entièrement équipée et d'un grand
+                    approvisionnement en carburant à long terme. <br>
+                    C'était un refuge pour les seuls survivants de la race humaine, qui prévoyaient à l'origine de
+                    rester sur le navire en stase pendant une décennie jusqu'à ce que la Terre soit habitable après
+                    l'événement de Damoclès. <br>
+                    Cependant, alors que l'on croyait que la Terre était toujours inhabitable,
+                    Monty a mis le navire sur la voie d'un nouveau monde natal potentiel pour l'humanité dans un autre
+                    système solaire avant de mourir de vieillesse après sa femme, après avoir découvert après 30 ans de
+                    travail qu'Eligius III avait été une mission de colonie pour installer cinq autres mondes
+                    potentiellement habitables.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/eligius1.png" alt="eligius1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img11', 'modal11');"></td>
+                            <td><img src="/img/eligius2.png" alt="eligius2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img11', 'modal11');"></td>
+                            <td><img src="/img/eligius3.png" alt="eligius3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img11', 'modal11');"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div id="modal11" onclick="this.style.display='none'">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="img11" style="width:100%">
+                    </div>
+                </div>
+                <!-- SANCTUM -->
+                <div id="sanctum" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Sanctum (appelée "Planète Alpha" par l'équipe Eligius III) est une lune partageant des similitudes
+                    atmosphériques avec la Terre. Il est situé dans la zone Boucle d'or d'un système d'étoiles binaires,
+                    ce qui signifie qu'il est dans la zone habitable et a deux soleils. C'est le monde le plus proche de
+                    la Terre et probablement le plus semblable. Il a été colonisé par une équipe de la Terre, et composé
+                    de quatre familles, les Primes et un autre individu. En utilisant des Mind Drives, ils ont continué
+                    leur règne ici pendant plus de deux siècles. Comme les autres planètes de mission, il se trouve à
+                    proximité d'un trou noir.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/sanctum1.jpg" alt="sanctum1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img12', 'modal12');"></td>
+                            <td><img src="/img/sanctum2.jpg" alt="sanctum2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img12', 'modal12');"></td>
+                            <td><img src="/img/sanctum3.jpg" alt="sanctum3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img12', 'modal12');"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div id="modal12" onclick="this.style.display='none'">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="img12" style="width:100%">
+                    </div>
+                </div>
+                <!-- NAKARA -->
+                <div id="nakara" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Nakara est une planète gelée avec une atmosphère respirable. C'était l'un des six mondes
+                    connectés par la pierre d'anomalie. La présence de l'Anomalie à également été détectée sur la
+                    planète et elle est utilisée par les Disciples comme cimetière pour leurs morts. <br>
+                    L'usage principal de la planète est un Ossuarium, ou l'enterrement des morts pour les disciples.
+                    Les ouvertures de surface indiquent la présence d'entités organiques.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/nakara1.png" alt="nakara1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img13', 'modal13');"></td>
+                            <td><img src="/img/nakara2.png" alt="nakara2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img13', 'modal13');"></td>
+                            <td><img src="/img/nakara3.png" alt="nakara3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img13', 'modal13');"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div id="modal13" onclick="this.style.display='none'">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="img13" style="width:100%">
+                    </div>
+                </div>
+                <!-- ETHEREA -->
+                <div id="etherea" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Etherea est une planète habitable qui est l'un des six mondes reliés par la pierre
+                    d'anomalie. La présence d'Anomalie a été détectée sur la planète. Il a également une atmosphère
+                    similaire à la Terre. <br>
+                    Le temps sur Etherea peut devenir extrême avec des tempêtes de neige qui peuvent durer des mois.
+                    Bill Cadogan a été piégé par une telle tempête pendant trois mois, tandis que Bellamy Blake et le
+                    Disciples Doucette ont été piégés pendant au moins deux mois par une autre. Comme sur Terre,
+                    les jours commencent finalement à raccourcir, bien que l'on sache que les violentes tempêtes se
+                    produisent avant cette période qui, sur Terre, se situe au début de l'hiver.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/etherea1.png" alt="etherea1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img14', 'modal14');"></td>
+                            <td><img src="/img/etherea2.png" alt="etherea2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img14', 'modal14');"></td>
+                            <td><img src="/img/etherea3.png" alt="etherea3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img14', 'modal14');"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div id="modal14" onclick="this.style.display='none'">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="img14" style="width:100%">
+                    </div>
+                </div>
+                <!-- SKYRING -->
+                <div id="skyring" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Surnommée Skyring par Hope Diyoza, c'est une planète habitable avec un anneau visible
+                    dans son ciel. C'était l'une des destinations de la mission Eligius III. Elle a une atmosphère
+                    similaire à la Terre, et la présence d'anomalie sur cette planète est détectée sous l'eau et est
+                    trop profonde pour nager sans équipement de protection. <br>
+                    La dilatation du temps sur Skyring est élevée. Les secondes sur Sanctum équivalent à des mois sur
+                    Skyring tandis qu'un jour peut égaler des siècles. Cela est dû au fait que les planètes sont plus
+                    éloignées d'un trou noir par rapport aux autres planètes de la mission. <br>
+                    La planète est également connue sous le nom de Beta par Mission Team Beta et Penance par les
+                    Disciples. Skyring est principalement utilisé comme planète prison par les Disciples pour envoyer
+                    leurs membres enfreignant la loi en guise de punition.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/skyring1.png" alt="skyring1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img15', 'modal15');"></td>
+                            <td><img src="/img/skyring2.png" alt="skyring2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img15', 'modal15');"></td>
+                            <td><img src="/img/skyring3.png" alt="skyring3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img15', 'modal15');"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div id="modal15" onclick="this.style.display='none'">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="img15" style="width:100%">
+                    </div>
+                </div>
+                <!-- BARDO -->
+                <div id="bardo" style="display: none;">
+                    <h4>Tout au long de la série</h4>
+                    Bardo est une planète extraterrestre devenue inhabitable, la laissant sans atmosphère
+                    respirable. C'est la que résident des Disciples. Elle abritait autrefois une race extraterrestre
+                    appelée les «Bardoans» qui contrôlaient l'anomalie temporelle. <br>
+                    Les Bardoans étaient des géants extraterrestres qui ont accidentellement détruit leur planète. Ils
+                    ont construit des structures souterraines pour survivre avant de s'éteindre. Selon Anders, ils ont
+                    été anéantis par le Gen-9 et transformés en géants de cristal. Ils ont laissé derrière eux des
+                    journaux faisant référence à leur utilisation de la pierre d'anomalie et à ce que Becca Franko
+                    appellerait «le code final» menant au jour du jugement et à la fin de leur espèce. En réalité, il
+                    s'agissait d'un test du juge pour déterminer si une race se transcenderait ou serait anéantie.
+                    Lorsque les Bardoans ont échoué au test, le juge a envoyé Gen-9 pour les éliminer. <br>
+                    À un moment donné après l'extinction des Bardoans, les humains de la Terre sont arrivés à travers
+                    l'anomalie temporelle fuyant l'apocalypse nucléaire. Ils se sont installés à Bardo et sont
+                    devenus les Disciples. Ils ont trouvé et adopté une grande partie de la technologie des
+                    Bardoans et, au cours des siècles, ont traduit les journaux qu'ils ont laissés derrière eux. Chaque
+                    personne avait un code biométrique unique par lequel une pierre d'anomalie peut trouver quelqu'un
+                    dans l'univers. Le code avait l'habitude de tenir sur le bras d'un Bardoan, mais pour les humains,
+                    le seul endroit assez grand est leur dos.
+                    <br>
+                    <h4>Quelques photos</h4>
+                    <table>
+                        <tr>
+                            <td><img src="/img/bardo1.png" alt="bardo1" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img16', 'modal16');"></td>
+                            <td><img src="/img/bardo2.png" alt="bardo2" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img16', 'modal16');"></td>
+                            <td><img src="/img/bardo3.png" alt="bardo3" style="width: 100%;"
+                                    onclick="imageZoom(this, 'img16', 'modal16');"></td>
+                        </tr>
+                    </table>
+                    <h4>Clique sur la photo pour l'agrandir</h4>
+                    <div id="modal16" onclick="this.style.display='none'">
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                        <img id="img16" style="width:100%">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
