@@ -30,5 +30,5 @@ function imageZoom(element, id, id2) {
 
 //FORMULAIRE DE CONTACT
 function send() {
-    document.getElementById('form').action = "mailto:kevinlaveau7@gmail.com?subject=" + document.getElementById('raison').value;
+    document.getElementById('form').action = "mailto:test@gmail.com?subject=" + document.getElementById('raison').value;
 }
