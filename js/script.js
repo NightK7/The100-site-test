@@ -18,10 +18,6 @@ function myLocation(id) {
     }
 }
 
-function hidePrevDisplay() {
-
-}
-
 //IMAGES ZOOM DES LIEUX
 function imageZoom(element, id, id2) {
     document.getElementById(id).src = element.src;
@@ -29,6 +25,27 @@ function imageZoom(element, id, id2) {
 }
 
 //FORMULAIRE DE CONTACT
-function send() {
-    document.getElementById('form').action = "mailto:test@gmail.com?subject=" + document.getElementById('raison').value;
+function sendMail() {
+    var nom = document.getElementById("nom").value;
+    var prenom = document.getElementById("prenom").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var raison = document.getElementById("raison").value;
+
+    var ebody = '\r\n' + 'Prénom: ' + prenom + '\r\n' + 'Nom: ' + nom + '\r\n' + 'Mail: ' + email;
+
+    document.getElementById('formContact').action = "mailto:kevinlaveau7@gmail.com?subject="
+        + encodeURIComponent(raison)
+        + "&body=" + encodeURIComponent(subject)
+        + encodeURIComponent(ebody);
+}
+
+//FORMULAIRE DE CONNEXION
+function ShowMDP(id) {
+    var x = document.getElementById(id);
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
 }
