@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Connexion</title>
+    <meta name="author" content="Night_K7">
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/logo.ico" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+        $(function () {
+            screen.orientation.lock("landscape");
+            $("#navbar").load("/pages/navbar.html");
+            $("#footer").load("/pages/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main id="inscription">
+        <div class="container">
+            <div class="main">
+                <form id="formInscription" action="#" method="post" enctype="text/plain">
+                    <label for="pseudoIns">Pseudo</label>
+                    <input type="text" id="pseudoIns" name="pseudoIns" required="required" placeholder="Votre pseudo..">
+                    <label for="emailIns1">E-mail</label>
+                    <input type="email" id="emailIns1" name="emailIns1" required="required"
+                        placeholder="Votre adresse email..">
+                    <label for="emailIns2">Confirmation de l'e-mail </label>
+                    <input type="email" id="emailIns2" name="emailIns2" required="required"
+                        placeholder="Votre adresse email..">
+                    <label for="mdpIns1">Mot de passe</label>
+                    <input type="password" id="mdpIns1" name="mdpIns1" required="required"
+                        placeholder="Votre mot de passe..">
+                    <input type="checkbox" onclick="ShowMDP('mdpIns1')">Afficher le mot de passe <br><br>
+                    <label for="mdpIns2">Confirmation du mot de passe</label>
+                    <input type="password" id="mdpIns2" name="mdpIns2" required="required"
+                        placeholder="Votre mot de passe..">
+                    <input type="checkbox" onclick="ShowMDP('mdpIns2')">Afficher le mot de passe <br><br>
+                    <input type="submit" value="Inscription">
+                </form>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+</body>
+
+</html>

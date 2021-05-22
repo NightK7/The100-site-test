@@ -5,7 +5,9 @@
     <title>Lieux</title>
     <meta name="author" content="Night_K7">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
     <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/style.css">
@@ -15,6 +17,7 @@
 
     <script>
         $(function () {
+            screen.orientation.lock("landscape");
             $("#navbar").load("/pages/navbar.html");
             $("#footer").load("/pages/footer.html");
         });
@@ -53,34 +56,6 @@
                     style="height:60px; background: url(/img/shallow_village.png) no-repeat center/ 100%"
                     onclick="myLocation('shallow')">
                     Shallow Valley</div><br>
-            </div>
-            <!-- 2EME COLONNE DE LIEUX -->
-            <div class="side">
-                <h2>The 100</h2>
-                <div class="fakeimg" style="height:60px; background: url(/img/polaris.png) no-repeat center/ 100%"
-                    onclick="myLocation('polaris')">
-                    Polaris</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/ark.jpg) no-repeat center/ 100%"
-                    onclick="myLocation('ark')">
-                    L'arche</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/eligius4.png) no-repeat center/ 100%"
-                    onclick="myLocation('eligius')">
-                    Eligius IV</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/sanctum.png) no-repeat center/ 100%"
-                    onclick="myLocation('sanctum')">
-                    Sanctum</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/nakara.jpg) no-repeat center/ 100%"
-                    onclick="myLocation('nakara')">
-                    Nakara</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/etherea.jpg) no-repeat center/ 100%"
-                    onclick="myLocation('etherea')">
-                    Etherea</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/skyring.png) no-repeat center/ 100%"
-                    onclick="myLocation('skyring')">
-                    Skyring</div><br>
-                <div class="fakeimg" style="height:60px; background: url(/img/bardo.png) no-repeat center/ 100%"
-                    onclick="myLocation('bardo')">
-                    Bardo</div><br>
             </div>
 
             <div class="main">
@@ -311,9 +286,6 @@
                         <img id="img08" style="width:100%">
                     </div>
                 </div>
-
-                <!-- //////////////DEUXIEME COLONE//////////////// -->
-
                 <!-- POLARIS -->
                 <div id="polaris" style="display: none;">
                     <h4>Tout au long de la série</h4>
@@ -568,6 +540,35 @@
                         <img id="img16" style="width:100%">
                     </div>
                 </div>
+            </div>
+
+            <!-- 2EME COLONNE DE LIEUX -->
+            <div class="side">
+                <h2>The 100</h2>
+                <div class="fakeimg" style="height:60px; background: url(/img/polaris.png) no-repeat center/ 100%"
+                    onclick="myLocation('polaris')">
+                    Polaris</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/ark.jpg) no-repeat center/ 100%"
+                    onclick="myLocation('ark')">
+                    L'arche</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/eligius4.png) no-repeat center/ 100%"
+                    onclick="myLocation('eligius')">
+                    Eligius IV</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/sanctum.png) no-repeat center/ 100%"
+                    onclick="myLocation('sanctum')">
+                    Sanctum</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/nakara.jpg) no-repeat center/ 100%"
+                    onclick="myLocation('nakara')">
+                    Nakara</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/etherea.jpg) no-repeat center/ 100%"
+                    onclick="myLocation('etherea')">
+                    Etherea</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/skyring.png) no-repeat center/ 100%"
+                    onclick="myLocation('skyring')">
+                    Skyring</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/bardo.png) no-repeat center/ 100%"
+                    onclick="myLocation('bardo')">
+                    Bardo</div><br>
             </div>
         </div>
     </main>

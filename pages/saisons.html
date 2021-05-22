@@ -2,10 +2,12 @@
 <html lang="fr">
 
 <head>
-    <title>Saisons</title>
+    <title>Personnages</title>
     <meta name="author" content="Night_K7">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
     <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/style.css">
@@ -15,6 +17,7 @@
 
     <script>
         $(function () {
+            screen.orientation.lock("landscape");
             $("#navbar").load("/pages/navbar.html");
             $("#footer").load("/pages/footer.html");
         });
@@ -26,7 +29,7 @@
     <main>
         <div class="col">
             <div class="side">
-                <h2>Saisons</h2>
+                <h2>Personnages</h2>
                 <h5>Photo of me:</h5>
                 <div class="fakeimg" style="height:200px;">Image</div>
                 <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
@@ -36,23 +39,24 @@
                 <div class="fakeimg" style="height:60px;">Image</div><br>
                 <div class="fakeimg" style="height:60px;">Image</div>
             </div>
-
             <div class="main">
-                <h2>Description de la saison :</h2>
-                <h5>Title description, Dec 7, 2017</h5>
-                <div class="fakeimg" style="height:200px; padding-right: 0px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
-                <br>
                 <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2017</h5>
-                <div class="fakeimg" style="height:200px; padding-right: 0px;">Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
+                <div class="box">
+                    <a class="button" href="#popup1">Show Overlay</a>
+                </div>
+
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Saison 1:</h2>
+                        <a class="close" href="#">×</a>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laboriosam culpa
+                            fugiat voluptatibus a nesciunt numquam dignissimos delectus alias similique reprehenderit
+                            debitis, officia animi nulla, quibusdam natus nam commodi dolorem assumenda autem ipsa.
+                            Quasi laboriosam dolorum quibusdam nemo voluptatibus. Cumque.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
