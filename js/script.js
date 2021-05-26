@@ -4,7 +4,7 @@ function goDown() {
     document.documentElement.scrollTop = 795;
 }
 
-//LIEUX
+//AFFICHER INFOS LIEUX
 function myLocation(id) {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -34,7 +34,7 @@ function sendMail() {
 
     var ebody = '\r\n' + 'Prénom: ' + prenom + '\r\n' + 'Nom: ' + nom + '\r\n' + 'Mail: ' + email;
 
-    document.getElementById('formContact').action = "mailto:test@gmail.com?subject="
+    document.getElementById('formContact').action = "mailto:kevinlaveau7@gmail.com?subject="
         + encodeURIComponent(raison)
         + "&body=" + encodeURIComponent(subject)
         + encodeURIComponent(ebody);
@@ -49,3 +49,5 @@ function ShowMDP(id) {
         x.type = "password";
     }
 }
+
+//AFFICHER LES POSTERS DS SAISONS
