@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>Personnages</title>
+    <title>Saisons</title>
     <meta name="author" content="Night_K7">
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
@@ -26,38 +26,251 @@
 
 <body>
     <div id="navbar"></div>
-    <main>
+    <main id="seasons">
         <div class="col">
-            <div class="side">
-                <h2>Personnages</h2>
-                <h5>Photo of me:</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                <h3>More Text</h3>
-                <p>Lorem ipsum dolor sit ame.</p>
-                <div class="fakeimg" style="height:60px;">Image</div><br>
-                <div class="fakeimg" style="height:60px;">Image</div><br>
-                <div class="fakeimg" style="height:60px;">Image</div>
-            </div>
-            <div class="main">
-                <h2>TITLE HEADING</h2>
-                <div class="box">
-                    <a class="button" href="#popup1">Show Overlay</a>
-                </div>
 
-                <div id="popup1" class="overlay">
+            <div class="side">
+                <h2>Posters des saisons</h2>
+                <div class="fakeimg" style="height:60px; background: url(/img/camp2.png) no-repeat center/ 100%">
+                    Saison 1</div><br>
+                <div class="fakeimg"
+                    style="height:60px; background: url(/img/mount_weather.png) no-repeat center/ 100%">
+                    Saison 2</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/polis.png) no-repeat center/ 100%">
+                    Saison 3</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/becca2.png) no-repeat center/ 100%">
+                    Saison 4</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/eligius4.png) no-repeat center/ 100%">
+                    Saison 5</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/sanctum.png) no-repeat center/ 100%">
+                    Saison 6</div><br>
+                <div class="fakeimg" style="height:60px; background: url(/img/anomaly.png) no-repeat top/ 100%">
+                    Saison 7</div>
+            </div>
+
+            <div class="main">
+                <h2>Description de la saison:</h2>
+                <!-- Button dans tableau pour afficher les infos saisons  -->
+                <table id="tableSaison">
+                    <tr>
+                        <td>
+                            <div class="box">
+                                <a class="button" href="#saison1">Saison 1</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <a class="button" href="#saison2">Saison 2</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <a class="button" href="#saison3">Saison 3</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="box">
+                                <a class="button" href="#saison4">Saison 4</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <a class="button" href="#saison5">Saison 5</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="box">
+                                <a class="button" href="#saison6">Saison 6</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="box">
+                                <a class="button" href="#saison7">Saison 7</a>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <!-- Div à afficher dans les popups des infos saisons -->
+                <!-- S1 -->
+                <div id="saison1" class="overlay">
                     <div class="popup">
-                        <h2>Saison 1:</h2>
+                        <h2>Saison 1 :</h2>
                         <a class="close" href="#">×</a>
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laboriosam culpa
-                            fugiat voluptatibus a nesciunt numquam dignissimos delectus alias similique reprehenderit
-                            debitis, officia animi nulla, quibusdam natus nam commodi dolorem assumenda autem ipsa.
-                            Quasi laboriosam dolorum quibusdam nemo voluptatibus. Cumque.
+                            <p>Il y a quatre-vingt-dix-sept ans, l'apocalypse nucléaire a décimé la planète Terre,
+                                détruisant la civilisation. Les seuls survivants étaient les 400 habitants de 12
+                                stations spatiales internationales qui étaient en orbite à l'époque. <br>
+                                Trois générations
+                                sont nées dans l'espace, les survivants sont maintenant au nombre de plus de 2 659,
+                                et les ressources s'épuisent sur leur «Arche» mourante - les 12 stations maintenant
+                                reliées entre elles et réutilisées pour maintenir les survivants en vie.
+                                Des mesures draconiennes, notamment la peine capitale et le contrôle de la population,
+                                sont à l'ordre du jour, alors que les dirigeants de l'Arche prennent des mesures
+                                impitoyables pour assurer leur avenir, notamment en exilant secrètement un groupe de 100
+                                jeunes prisonniers à la surface de la Terre pour vérifier si elle est habitable. <br>
+                                Pour la première fois en près d'un siècle, les humains sont revenus sur la planète
+                                Terre. Parmi les 100 exilés se trouvent Clarke, Wells, Finn et le duo frère/soeur
+                                Bellamy et Octavia... <br>
+                                Technologiquement aveugles à ce qui se passe sur la planète en dessous d'eux, les
+                                dirigeants de l'Arche tel que Abby, Jaha et Kane sont confrontés à des décisions
+                                difficiles concernant la vie, la mort et l'existence continue de la race humaine. <br>
+                                Pour les 100 jeunes sur Terre, cependant, la planète extraterrestre qu'ils n'ont jamais
+                                connue est un royaume mystérieux qui peut être magique à un moment et mortel le suivant.
+                                Avec la survie de la race humaine entièrement entre leurs mains, les 100 doivent trouver
+                                un moyen de transcender leurs différences, de s'unir et de se forger une nouvelle voie
+                                sur une Terre sauvagement changée qui est primitive, intense et grouillante d'inconnu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- S2 -->
+                <div id="saison2" class="overlay">
+                    <div class="popup">
+                        <h2>Saison 2 :</h2>
+                        <a class="close" href="#">×</a>
+                        <div class="content">
+                            <p>La deuxième saison reprend avec le groupe toujours dispersé et désespéré d'être
+                                réuni. <br>
+                                Alors que les membres des 100 et les nouveaux arrivants de l'Arche prennent leur
+                                place dans un nouveau monde dangereux et beau, ils sont confrontés au péril physique et
+                                aux dilemmes moraux qui accompagnent la reforge de la société. <br>
+                                Quel genre de vie vont-ils construire ? Et combien cela leur coûtera-t-il ? La quête de
+                                cette saison les mettra au défi plus que tout ce qui a précédé. Les coeurs seront
+                                brisés. Des vies seront perdues. <br>
+                                Des héros vont naître.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- S3 -->
+                <div id="saison3" class="overlay">
+                    <div class="popup">
+                        <h2>Saison 3 :</h2>
+                        <a class="close" href="#">×</a>
+                        <div class="content">
+                            <p>Depuis deux saisons, les réfugiés des 100 envoyés sur Terre sont en guerre. D'abord avec
+                                eux-mêmes, puis avec les Grounders, et enfin avec Mount Weather. <br>
+                                Beaucoup ont perdu la vie en cours de route. Tous ont perdu leur innocence. Ils ont
+                                appris à leurs dépens que dans la lutte pour la survie, il n'y a ni héros ni méchants.
+                                Il n'y a que les vivants et les morts. <br>
+                                Mais maintenant, la guerre est finie. La bataille contre le mont Weather est
+                                gagnée. Les prisonniers sont rentrés chez eux dans un monde apparemment en paix, mais
+                                peuvent-ils trouver la paix en eux-mêmes après ce qu'ils ont dû faire pour s'échapper ?
+                                Et y a-t-il plus dans la vie que survivre ? Malheureusement, leur nouveau sens de la
+                                normalité sera de courte durée et leur vie sera changée à jamais, car les menaces,
+                                anciennes et nouvelles, mettent à l'épreuve leur loyauté, les poussent au-delà de leurs
+                                limites et les amènent à se demander ce que signifie vraiment être humain. <br>
+                                Premièrement, ils se sont battus pour survivre. Ensuite, ils se sont battus pour leurs
+                                amis. Maintenant, ils se battront pour la race humaine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- S4 -->
+                <div id="saison4" class="overlay">
+                    <div class="popup">
+                        <h2>Saison 4 :</h2>
+                        <a class="close" href="#">×</a>
+                        <div class="content">
+                            <p>Pendant trois saisons, les 100 se sont battus pour survivre. Ce combat les a déchirés,
+                                les a retournés les uns contre les autres et a coûté la vie à leurs amis les plus
+                                proches. <br>
+                                Dans la troisième saison, nos héros se sont retrouvés aux épicentres du monde Grounder
+                                et de la lutte pour l'âme d'Arkadia. Malgré tous leurs efforts, la guerre totale
+                                semblait inévitable jusqu'à ce qu'une nouvelle menace encore plus dangereuse, une menace
+                                qui montait tranquillement depuis le début, explose à la surface: A.L.I.E., une I.A qui
+                                a mis fin au monde, a offert un soulagement de la douleur et de la vie éternelle dans la
+                                «Ville Lumière», mais à mesure que ses rangs grandissaient, il devint rapidement clair
+                                qu'elle construisait une armée dédiée au contrôle de toute vie sensible sur Terre. <br>
+                                Ce n'était plus une bataille entre factions en guerre; c'était un combat pour l'humanité
+                                elle-même. Maintenant, à la suite de l'épopée finale de la saison trois, une dure vérité
+                                atterrit sur les épaules de ceux qui restent. Que reste-t-il à combattre pour l'instant?
+                                Vont-ils entrer tranquillement dans la nuit, ou trouveront-ils l'espoir et la foi les
+                                uns dans les autres, alors qu'ils affrontent leur chapitre le plus sombre à ce jour ?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- S5 -->
+                <div id="saison5" class="overlay">
+                    <div class="popup">
+                        <h2>Saison 5 :</h2>
+                        <a class="close" href="#">×</a>
+                        <div class="content">
+                            <p>Pendant quatre saisons, les 100 se sont battus pour survivre. Ce combat les a déchirés,
+                                les a retournés les uns contre les autres et a coûté la vie à leurs amis les plus
+                                proches. <br>
+                                La saison quatre a présenté à nos héros la dure vérité que la race humaine est condamnée
+                                à affronter un ennemi imbattable: les réacteurs nucléaires restants sur Terre ont fondu
+                                et mettent le feu à l'atmosphère. <br>
+                                Nos héros ont eu très peu de temps pour se préparer au pire, toutes les solutions
+                                possibles disparaissant presque aussi rapidement qu'ils étaient capables de les trouver.
+                                Avec un compte à rebours littéral jusqu'à la fin du monde, nos héros seront obligés de
+                                faire des efforts inimaginables pour s'en sortir vivants. <br>
+                                À la suite de Praimfaya, ils doivent recommencer, et avec la saison cinq, nos héros
+                                devront examiner leur responsabilité envers le nouvel endroit qu'ils appellent chez eux
+                                et les générations futures qui l'habiteront. <br>
+                                Peuvent-ils recommencer et célébrer ce qui reste, ou les fragilités de la nature humaine
+                                leur coûteront-elles leur seule chance de renaître de ses cendres?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- S6 -->
+                <div id="saison6" class="overlay">
+                    <div class="popup">
+                        <h2>Saison 6 :</h2>
+                        <a class="close" href="#">×</a>
+                        <div class="content">
+                            <p>Pendant cinq saisons, nos héros ont fait tout ce qu'il fallait pour survivre sur Terre,
+                                et rien n'a fonctionné. La Terre était insurvivable, perdue pour eux à jamais. Ce qui
+                                n'a pas été perdu: l'espoir. <br>
+                                Après 125 ans de sommeil cryogénique, voyageant à travers les étoiles, nos héros se sont
+                                réveillés dans une nouvelle maison, un dernier cadeau de quelques amis disparus. Un
+                                endroit où ils peuvent réessayer. On leur confie une tâche simple: faire mieux, être les
+                                gentils. <br>
+                                Avec ce credo à l'esprit, Clarke et Bellamy conduisent un groupe dans ce monde
+                                mystérieux, dans l'espoir de recommencer, pour enfin trouver la paix. Mais les vieilles
+                                habitudes meurent et lorsqu'elles tombent sur une société idyllique, il devient
+                                rapidement clair que tout sur Sanctum n'est pas aussi parfait qu'il y paraît. <br>
+                                Malgré leur détermination à faire mieux, des menaces à la fois visibles et invisibles
+                                obligeront une fois de plus nos héros à se battre pour leur vie et l'avenir de
+                                l'humanité.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- S7 -->
+                <div id="saison7" class="overlay">
+                    <div class="popup">
+                        <h2>Saison 7 :</h2>
+                        <a class="close" href="#">×</a>
+                        <div class="content">
+                            <p>La septième et dernière saison s'ouvre avec nos héros ramassant les morceaux de la
+                                société qu'ils ont détruite sur Sanctum. <br>
+                                Toujours sous le choc de la mort de sa mère, Clarke, peut-être plus que quiconque,
+                                ressent le bilan d’années et d’années de combats et de pertes. Le groupe constate
+                                rapidement que le maintien de l'ordre entre les factions concurrentes n'est pas une
+                                tâche facile, et cela les amène à se demander si leur engagement à faire mieux valait le
+                                prix. <br>
+                                Dans le même temps, nos héros doivent faire face à de nouveaux obstacles à une échelle
+                                au-delà de tout ce qu'ils ont connu auparavant alors qu'ils découvrent les mystères de
+                                l'Anomalie. Ce qu'ils rencontrent au cours de ce voyage épique les pousse à leurs
+                                limites à la fois physiquement et émotionnellement, remettant en question leurs
+                                conceptions de longue date de la famille, de l'amour et du sacrifice. <br>
+                                En fin de compte, nos héros doivent répondre par eux-mêmes de ce que signifie vraiment
+                                vivre, et pas seulement survivre.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
     <div id="footer"></div>
