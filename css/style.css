@@ -392,6 +392,9 @@ input[type=submit]:hover {
     max-height: 30%;
     overflow: auto;
 }
+#season > div > div.side > a {
+    text-decoration: none;
+}
 /* ******************************FOOTER*********************** */
 footer{
     background-color: rgb(15, 100, 197);
