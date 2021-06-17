@@ -309,6 +309,9 @@ input[type=submit]:hover {
     color: blue;
 }
 /* ******************************SAISONS*********************** */
+#poster1 > div > div > p > img ,#poster2 > div > div > p > img ,#poster3 > div > div > p > img,#poster4 > div > div > p > img,#poster5 > div > div > p > img,#poster6 > div > div > p > img,#poster7 > div > div > p > img {
+    border-radius: 10px;
+}
 #season > div > div.main > h2 {
     color: white;
 }
@@ -395,6 +398,8 @@ input[type=submit]:hover {
 #season > div > div.side > a {
     text-decoration: none;
 }
+/* ******************************CLANS*********************** */
+
 /* ******************************FOOTER*********************** */
 footer{
     background-color: rgb(15, 100, 197);
