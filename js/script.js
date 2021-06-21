@@ -36,7 +36,7 @@ function sendMail() {
 
     var ebody = '\r\n' + 'Prénom: ' + prenom + '\r\n' + 'Nom: ' + nom + '\r\n' + 'Mail: ' + email;
 
-    document.getElementById('formContact').action = "mailto:kevinlaveau7@gmail.com?subject="
+    document.getElementById('formContact').action = "mailto:test@gmail.com?subject="
         + encodeURIComponent(raison)
         + "&body=" + encodeURIComponent(subject)
         + encodeURIComponent(ebody);
