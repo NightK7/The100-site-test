@@ -57,7 +57,6 @@ h2 a {
   opacity: 1;
   visibility: visible;
 }
-
 header{
     background: url(/img/main_title.jpg) no-repeat 50% 50%;
     background-size: cover;
@@ -102,6 +101,7 @@ body > header > button:hover{
 .navbar, #navbar{
     position: sticky;
     top: 0;
+    z-index: 9;
 }
 ul {
     list-style-type: none;
@@ -400,6 +400,67 @@ input[type=submit]:hover {
 }
 /* ******************************CLANS*********************** */
 
+/* ******************************CHARACTER*********************** */
+#side_character > nav > ul > li {
+    display: inline-block;
+    vertical-align: top;
+}
+#side_character > nav > ul {
+    text-align: center;
+}
+#side_character > nav > ul > li > a {
+    font-size: 2em;
+    margin: 6px;
+}   
+.menu{
+    position: sticky;
+    top: 50px;
+}
+#side_character{
+    -ms-flex: 11%;
+    flex: 11%;
+    background-color: #aaa;
+    padding: 20px;
+}
+#character > div > div > h3{
+    text-align: left;
+    clear: both;
+}
+.container_Character {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    float: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.image_Character {
+    display: block;
+    width: 100%;
+    height: 500px;
+    height: auto;
+}
+.overlay_Character {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(94, 94, 94, 0.5);
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+.container_Character:hover .overlay_Character {
+    opacity: 1;
+}
+.container_Character:hover{
+    cursor: crosshair;
+}
 /* ******************************FOOTER*********************** */
 footer{
     background-color: rgb(15, 100, 197);
