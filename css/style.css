@@ -399,7 +399,22 @@ input[type=submit]:hover {
     text-decoration: none;
 }
 /* ******************************CLANS*********************** */
-
+#clan > div > div.main > div > div > img{
+    float: left;
+    padding: 10px;
+}
+#clan > div > div.main > div{
+    float: left;
+}
+.container_Clan{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 25px;
+}
+#clan > div > div.side > a {
+    text-decoration: none;
+}
 /* ******************************CHARACTER*********************** */
 #side_character > nav > ul > li {
     display: inline-block;
