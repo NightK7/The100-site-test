@@ -412,8 +412,15 @@ input[type=submit]:hover {
     padding: 20px;
     margin-top: 25px;
 }
+.container_Clan:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 4px 4px grey;
+}
 #clan > div > div.side > a {
     text-decoration: none;
+}
+#clan > div > div.side > a:nth-child(28) > div, #clan > div > div.side > a:nth-child(12) > div, #clan > div > div.side > a:nth-child(10) > div {
+    color: black;
 }
 /* ******************************CHARACTER*********************** */
 #side_character > nav > ul > li {
