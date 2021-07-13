@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>The100 | News</title>
+    <meta name="author" content="Night_K7">
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/logo.ico" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+        $(function () {
+            screen.orientation.lock("landscape");
+            $("#navbar").load("/pages/navbar.html");
+            $("#footer").load("/pages/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main id="news">
+        <div class="col">
+
+            <!-- TWITTER PUBLISH CWThe100 -->
+            <div class="side" id="twitter">
+
+                <a href="https://twitter.com/cwthe100?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                    data-show-count="true">Follow @cwthe100</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                <div class="left">
+                    <a class="twitter-timeline" data-width="650" data-height="850"
+                        href="https://twitter.com/cwthe100?ref_src=twsrc%5Etfw">Tweets by cwthe100</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+            <!-- TWITTER PUBLISH The100Writers -->
+            <div class="side" id="twitter">
+
+                <a href="https://twitter.com/The100writers?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                    data-show-count="true">Follow @The100writers</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                <div class="right">
+                    <a class="twitter-timeline" data-width="650" data-height="850"
+                        href="https://twitter.com/The100writers?ref_src=twsrc%5Etfw">Tweets by The100writers</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <div id="footer"></div>
+</body>
+
+</html>
