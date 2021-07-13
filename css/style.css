@@ -325,9 +325,6 @@ input[type=submit]:hover {
 #tableSaison td {
     padding: 8px;
 }
-#seasons > div > div.main {
-    background: url();
-}
 .box {
     width: 50%;
     margin: 0 auto;
@@ -482,6 +479,10 @@ input[type=submit]:hover {
 }
 .container_Character:hover{
     cursor: crosshair;
+}
+/* ******************************NEWS*********************** */
+#twitter {
+    background-color: white;
 }
 /* ******************************FOOTER*********************** */
 footer{
