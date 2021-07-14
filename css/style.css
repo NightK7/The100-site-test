@@ -480,6 +480,10 @@ input[type=submit]:hover {
 .container_Character:hover{
     cursor: crosshair;
 }
+/* ******************************SONDAGES*********************** */
+#sondages > div > div {
+    background-color: white;
+}
 /* ******************************NEWS*********************** */
 #twitter {
     background-color: white;
