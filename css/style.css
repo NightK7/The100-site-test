@@ -230,6 +230,16 @@ body > main > div > div.main > a > img {
     color: white;
     text-align: center;
 }
+body > main > div > div.side > a:nth-child(11) {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 20%;
+}
+body > main > div > div.side > a:nth-child(11):hover {
+    color: rgb(15, 100, 197);
+}
 /* ******************************LIEUX*********************** */
 table > tbody > tr > td > img{
     cursor: pointer;
