@@ -4,30 +4,20 @@
 <head>
     <title>The100 | Home</title>
     <meta name="author" content="Night_K7">
+    <meta name="keywords" content="The 100">
+    <meta name="description" content="The 100 Fansite made by a fan.">
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
+        content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height" />
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="icon" href="/img/logo.ico" />
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-    <script>
-        $(function () {
-            screen.orientation.lock("landscape");
-            $("#navbar").load("/pages/navbar.html");
-            $("#footer").load("/pages/footer.html");
-        });
-    </script>
 </head>
 
 <body>
     <header>
         <h1>THE 100</h1>
-        <button><i class="fas fa-chevron-down" onclick="goDown()"></i></button>
+        <button aria-label="goDown"><i class="fas fa-chevron-down" onclick="goDown()"></i></button>
     </header>
     <div id="navbar"></div>
     <main>
@@ -36,36 +26,36 @@
             <div class="side">
                 <h2>MENU</h2>
                 <h4>SAISONS :</h4>
-                <a href="/pages/saisons.html">
+                <a name="saisons" href="/pages/saisons.html">
                     <div class="fakeimg"
                         style="height:100px; background: url(/img/menu_saison.png) no-repeat center/ 100%">
                     </div><br>
                 </a>
                 <h4>LIEUX :</h4>
-                <a href="/pages/lieux.html">
+                <a name="lieux" href="/pages/lieux.html">
                     <div class="fakeimg"
                         style="height:100px; background: url(/img/menu_lieux.jpg) no-repeat bottom/ 100%">
                     </div><br>
                 </a>
                 <h4>CLANS :</h4>
-                <a href="/pages/clans.html">
+                <a name="clans" href="/pages/clans.html">
                     <div class="fakeimg"
                         style="height:100px; background: url(/img/menu_clans.jpg) no-repeat center/ 100%">
                     </div><br>
                 </a>
                 <h4>PERSONNAGES :</h4>
-                <a href="/pages/personnages.html">
+                <a name="character" href="/pages/personnages.html">
                     <div class="fakeimg"
                         style="height:100px; background: url(/img/menu_perso.png) no-repeat center/ 100%">
                     </div><br>
                 </a>
                 <!-- DISCLAIMER -->
                 <br>
-                <a href="#disclaimer">AVERTISSEMENT</a>
+                <a name="disclaimer" href="#disclaimer">AVERTISSEMENT</a>
                 <div id="disclaimer" class="overlay">
                     <div class="popup">
                         <h2>Avertissement :</h2>
-                        <a class="close" href="#navbar">×</a>
+                        <a name="close_dislaimer" class="close" href="#navbar">×</a>
                         <div class="content">
                             <p>The 100 France n'est pas le site français officiel de la série. <br>
                                 Il s'agit d'un site réaliser par un fan, regroupant des informations sur les
@@ -116,7 +106,7 @@
                                 réalisateur et développeur pour la série 100.
                             </p>
                         </td>
-                        <td><img src="/img/crew.jpg" alt="crew" style="height: 200px;"></td>
+                        <td><img src="/img/crew.jpg" alt="crew" style="height: 200px; width: auto;"></td>
                     </tr>
                 </table>
                 <!-- TABLEAU des date et infos + -->
@@ -180,13 +170,28 @@
                     </tr>
                 </table>
                 <br>
-                <a target="_blank" rel="noopener noreferrer" href="https://the100.fandom.com/wiki/The_100_Wiki"><img
-                        src="/img/logo.png" alt="logo">
+                <a name="wiki100" target="_blank" rel="noopener noreferrer"
+                    href="https://the100.fandom.com/wiki/The_100_Wiki"><img src="/img/logo.png" alt="logo">
                 </a>
             </div>
         </div>
     </main>
     <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            screen.orientation.lock("landscape");
+            $("#navbar").load("/pages/navbar.html");
+            $("#footer").load("/pages/footer.html");
+        });
+    </script>
 </body>
 
 </html>
