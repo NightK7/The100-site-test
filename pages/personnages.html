@@ -4,24 +4,14 @@
 <head>
     <title>The100 | Personnages</title>
     <meta name="author" content="Night_K7">
+    <meta name="keywords" content="The 100">
+    <meta name="description" content="The 100 Fansite made by a fan.">
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
+        content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/logo.ico" />
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-    <script>
-        $(function () {
-            screen.orientation.lock("landscape");
-            $("#navbar").load("/pages/navbar.html");
-            $("#footer").load("/pages/footer.html");
-        });
-    </script>
 </head>
 
 <body>
@@ -35,12 +25,17 @@
                     <h2>Menu</h2>
                     <ul>
                         <li>
-                            <a href="#A">A</a> <a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <br>
-                            <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <br>
-                            <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <br>
-                            <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <br>
-                            <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#V">V</a> <br>
-                            <a href="#W">W</a> <a href="#Z">Z</a> <br>
+                            <a name="a" href="#A">A</a> <a name="b" href="#B">B</a> <a name="c" href="#C">C</a>
+                            <a name="d" href="#D">D</a> <br>
+                            <a name="e" href="#E">E</a> <a name="f" href="#F">F</a> <a name="g" href="#G">G</a>
+                            <a name="h" href="#H">H</a> <br>
+                            <a name="i" href="#I">I</a> <a name="j" href="#J">J</a> <a name="k" href="#K">K</a>
+                            <a name="l" href="#L">L</a> <br>
+                            <a name="m" href="#M">M</a> <a name="n" href="#N">N</a> <a name="o" href="#O">O</a>
+                            <a name="p" href="#P">P</a> <br>
+                            <a name="r" href="#R">R</a> <a name="s" href="#S">S</a> <a name="t" href="#T">T</a>
+                            <a name="v" href="#V">V</a> <br>
+                            <a name="w" href="#W">W</a> <a name="z" href="#Z">Z</a> <br>
                         </li>
                     </ul>
                 </nav>
@@ -469,6 +464,21 @@
         </div>
     </main>
     <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            screen.orientation.lock("landscape");
+            $("#navbar").load("/pages/navbar.html");
+            $("#footer").load("/pages/footer.html");
+        });
+    </script>
 </body>
 
 </html>

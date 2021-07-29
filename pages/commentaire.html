@@ -4,24 +4,14 @@
 <head>
     <title>The100 | Commentaires</title>
     <meta name="author" content="Night_K7">
+    <meta name="keywords" content="The 100">
+    <meta name="description" content="The 100 Fansite made by a fan.">
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
+        content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/logo.ico" />
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-    <script>
-        $(function () {
-            screen.orientation.lock("landscape");
-            $("#navbar").load("/pages/navbar.html");
-            $("#footer").load("/pages/footer.html");
-        });
-    </script>
 </head>
 
 <body>
@@ -32,12 +22,29 @@
         <div id="HCB_comment_box">Les commentaires sont en train de chargé...</div>
         <link rel="stylesheet" type="text/css"
             href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-        <script type="text/javascript"
-            id="hcb"> /*<!--*/ if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"), h = "https://www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24.9Ds4qs2P7klI.SKLdtY8." + "&opts=16798&num=10&ts=1627256934643"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })(); /*-->*/</script>
         <!-- end www.htmlcommentbox.com -->
 
     </main>
     <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <!-- Commnet_section -->
+    <script type="text/javascript"
+        id="hcb"> /*<!--*/ if (!window.hcb_user) { hcb_user = {}; } (function () { var s = document.createElement("script"), l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"), h = "https://www.htmlcommentbox.com"; s.setAttribute("type", "text/javascript"); s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24.9Ds4qs2P7klI.SKLdtY8." + "&opts=16798&num=10&ts=1627256934643"); if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s); })(); /*-->*/</script>
+    <!-- OTHER SCRIPTS -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            screen.orientation.lock("landscape");
+            $("#navbar").load("/pages/navbar.html");
+            $("#footer").load("/pages/footer.html");
+        });
+    </script>
 </body>
 
 </html>

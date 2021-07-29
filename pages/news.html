@@ -4,24 +4,14 @@
 <head>
     <title>The100 | News</title>
     <meta name="author" content="Night_K7">
+    <meta name="keywords" content="The 100">
+    <meta name="description" content="The 100 Fansite made by a fan.">
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
+        content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/logo.ico" />
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-    <script>
-        $(function () {
-            screen.orientation.lock("landscape");
-            $("#navbar").load("/pages/navbar.html");
-            $("#footer").load("/pages/footer.html");
-        });
-    </script>
 </head>
 
 <body>
@@ -32,12 +22,12 @@
             <!-- TWITTER PUBLISH CWThe100 -->
             <div class="side" id="twitter">
 
-                <a href="https://twitter.com/cwthe100?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                    data-show-count="true">Follow @cwthe100</a>
+                <a name="twitter_embed" href="https://twitter.com/cwthe100?ref_src=twsrc%5Etfw"
+                    class="twitter-follow-button" data-show-count="true">Follow @cwthe100</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
                 <div class="left">
-                    <a class="twitter-timeline" data-width="650" data-height="850"
+                    <a name="twitter_embed" class="twitter-timeline" data-width="650" data-height="850"
                         href="https://twitter.com/cwthe100?ref_src=twsrc%5Etfw">Tweets by cwthe100</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
@@ -45,12 +35,12 @@
             <!-- TWITTER PUBLISH The100Writers -->
             <div class="side" id="twitter">
 
-                <a href="https://twitter.com/The100writers?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                    data-show-count="true">Follow @The100writers</a>
+                <a name="twitter_embed" href="https://twitter.com/The100writers?ref_src=twsrc%5Etfw"
+                    class="twitter-follow-button" data-show-count="true">Follow @The100writers</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
                 <div class="right">
-                    <a class="twitter-timeline" data-width="650" data-height="850"
+                    <a name="twitter_embed" class="twitter-timeline" data-width="650" data-height="850"
                         href="https://twitter.com/The100writers?ref_src=twsrc%5Etfw">Tweets by The100writers</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
@@ -60,6 +50,21 @@
 
     </main>
     <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            screen.orientation.lock("landscape");
+            $("#navbar").load("/pages/navbar.html");
+            $("#footer").load("/pages/footer.html");
+        });
+    </script>
 </body>
 
 </html>

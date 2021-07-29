@@ -4,24 +4,14 @@
 <head>
     <title>The100 | Saisons</title>
     <meta name="author" content="Night_K7">
+    <meta name="keywords" content="The 100">
+    <meta name="description" content="The 100 Fansite made by a fan.">
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
+        content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/logo.ico" />
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-    <script>
-        $(function () {
-            screen.orientation.lock("landscape");
-            $("#navbar").load("/pages/navbar.html");
-            $("#footer").load("/pages/footer.html");
-        });
-    </script>
 </head>
 
 <body>
@@ -29,40 +19,41 @@
     <main id="season">
         <div class="col">
 
+            <!-- MENU SUR LE COTER -->
             <div class="side">
                 <h2>Posters des saisons</h2>
-                <a href="#poster1">
+                <a name="poster" Contentful Paint href="#poster1">
                     <div class="fakeimg" style="height:60px; background: url(/img/camp2.png) no-repeat center/ 100%">
                         Saison 1</div>
                     <br>
                 </a>
-                <a href="#poster2">
+                <a name="poster" href="#poster2">
                     <div class="fakeimg"
                         style="height:60px; background: url(/img/mount_weather.png) no-repeat center/ 100%">
                         Saison 2</div>
                     <br>
                 </a>
-                <a href="#poster3">
+                <a name="poster" href="#poster3">
                     <div class="fakeimg" style="height:60px; background: url(/img/polis.png) no-repeat center/ 100%">
                         Saison 3</div>
                     <br>
                 </a>
-                <a href="#poster4">
+                <a name="poster" href="#poster4">
                     <div class="fakeimg" style="height:60px; background: url(/img/becca2.png) no-repeat center/ 100%">
                         Saison 4</div>
                     <br>
                 </a>
-                <a href="#poster5">
+                <a name="poster" href="#poster5">
                     <div class="fakeimg" style="height:60px; background: url(/img/eligius4.png) no-repeat center/ 100%">
                         Saison 5</div>
                     <br>
                 </a>
-                <a href="#poster6">
+                <a name="poster" href="#poster6">
                     <div class="fakeimg" style="height:60px; background: url(/img/sanctum.png) no-repeat center/ 100%">
                         Saison 6</div>
                     <br>
                 </a>
-                <a href="#poster7">
+                <a name="poster" href="#poster7">
                     <div class="fakeimg" style="height:60px; background: url(/img/anomaly.png) no-repeat top/ 100%">
                         Saison 7</div>
                 </a>
@@ -412,12 +403,26 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </div>
     </main>
     <div id="footer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            screen.orientation.lock("landscape");
+            $("#navbar").load("/pages/navbar.html");
+            $("#footer").load("/pages/footer.html");
+        });
+    </script>
 </body>
 
 </html>
